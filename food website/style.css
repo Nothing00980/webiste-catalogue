@@ -1,0 +1,259 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'Bree Serif', serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* css vaiables */
+:root{
+    --navbar-height :59px;
+
+}
+/* navbar */
+#navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 79px;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#logo{
+    margin: 10px 20px;
+    
+
+}
+#logo img{
+    width: 100px;
+    /* height: px; */
+    /* margin: 5px 5px; */
+}
+.navbar ul{
+    font-family: 'Baloo Bhai 2', cursive;
+
+
+    display: flex;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 22px;
+    border-radius: 20px;
+    display: block;
+    
+}
+.navbar a:hover{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    padding: 5px 22px;
+    border-radius: 20px;
+    display: block;
+    
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+
+}
+
+/* section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+}
+#home::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+    position: absolute;
+    background: url(images/tomato-2779702.jpg) no-repeat center center/cover;
+
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+
+}
+/* ultility class */
+.primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgb(244, 221, 177);
+    color: black;
+    margin: 17px ;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: white;
+    background-color: brown;
+    transition: 0.5s;
+}
+.center{
+    text-align: center;
+}
+.secondary{
+    font-size: 2rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* services section */
+#services{
+    display: flex;
+    flex-direction: row;
+    /* margin: 33px; */
+
+}
+#services-container{
+    top: 100px;
+    position: relative;
+}
+
+#services .box  img {
+    height: 134px;
+    display: block;
+    margin: auto;
+    padding-top: 5px;
+    border-radius: 22px;
+
+
+}
+#services .box{
+    border: 2px solid brown;
+    border-radius: 23px;
+    /* width: 30%; */
+    background-color: rgb(234, 217, 179);
+    margin: 20px;
+    z-index: 2;
+
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* client section */
+#client-section{
+    top: 117px;
+    position: relative;
+    height: 344px;
+    background-color: rgb(234, 230, 225);
+}
+/* #client-section ::before{
+    content: "";
+    position: absolute;
+    background: url();
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .4;
+} */
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 100px;
+}
+.client-item{
+    padding: 34px;
+}
+#client-section h1{
+    padding-top: 22px;
+}
+
+/* contact section */
+#contact{
+    top: 117px;
+    position: relative;
+    /* height: 344px; */
+    /* background-color: rgb(234, 230, 225); */
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form {
+ width: 40%;
+
+}
+#contact-box label {
+font-size: 1.2rem;
+}
+
+
+#contact-box input ,textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 117px;
+
+}
+
+
+
+
+
+
