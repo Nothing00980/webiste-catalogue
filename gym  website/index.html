@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gym</title>
+    <link rel="stylesheet" href="gym.css">
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        color: white;
+
+    }
+    .head{
+        height: 110vh;
+        width: 100%;
+        border: 2px solid orange;
+        background-size: cover;
+        background-image: url('images/gym.png');
+    }
+    .left{
+        left: 12px;
+        display: inline-block;
+        /* padding: 0px; */
+        position: absolute;
+        top: 2px;
+
+        /* border: 2px solid orange; */
+
+    }
+    .left img{
+        /* to convet image color into opposite */
+        /* filter: invert(100%); */
+        /* margin: 0px; */
+
+        /* display: inline-block; */
+        /* height: 60px; */
+        width: 80px;
+        padding-left: 5px;
+
+    }
+
+    .left div{
+        line-height: 0px;
+        padding-left: 5px;
+        text-align: center;
+        display: block;
+    }
+    .mid{
+        /* position: absolute; */
+        display: block;
+        width: fit-content;
+        /* width: 40%; */
+        /* margin-top: 2px; */
+        margin:  10px auto;
+
+        /* border: 2px solid yellow; */
+
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        padding: 3px 10px;
+        justify-content: space-between;
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar a{
+        text-decoration: none;
+
+        
+    }
+
+
+    .right{
+        position: absolute;
+        right: 11px;
+        top: 13px;
+        display: inline-block;
+        /* border: 2px solid red; */
+
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        margin: 0px;
+        background-color: black;
+        padding: 4px 14px;
+        border-radius: 10px;
+        cursor: pointer;
+       }
+       .btn:hover{
+           background-color: rgb(18, 17, 17);
+       }
+       .container{
+           display: inline-block;
+           /* border: 2px solid white; */
+           margin: 106px 20px;
+           padding: 40px 0px;
+           /* padding: auto; */
+           width: 33%;
+           border-radius: 20px;
+       }
+       .from-group{
+           padding: 4px;
+       }
+       .from-group input {
+           width: 60%;
+           text-align: center;
+           display: block;
+           padding: 6px;
+           margin: 3px auto;
+           border-radius: 10px;
+           background-color: rgb(15, 14, 14);
+
+       }
+       .container h1{
+           text-align: center;
+           padding: 8px 4px;
+       }
+       .container button{
+           display: block;
+           /* margin-left: 43%; */
+           margin: 20px auto;
+       }
+
+</style>
+<body>
+    <section class="head">
+        <header>
+            <div class="left">
+                <!-- for logo -->
+                <img src="images/logo2.png" alt="fit-content">
+                <div>
+
+                    Fitness Studio
+                </div>
+                
+
+            </div>
+            <div class="mid">
+                <!-- for navbar -->
+                <ul class="navbar">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Fitness Calculator</a></li>
+                    <li><a href="">Contact Us</a></li>
+
+                </ul>
+
+            </div>
+            <div class="right">
+                <button class="btn">
+                    Call Us Now
+
+                </button>
+                <button class="btn">
+                    Email Us
+                </button>
+
+                <!-- for some content -->
+
+            </div>
+        </header>
+        <div class="container">
+            <h1>Join The Best Gym of Sumerpur Now</h1>
+            <form action="noaction.php"></form>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Locality">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+
+        </div>
+    </section>
+    <!-- search for website templates for refrences -->
+    
+    
+</body>
+</html>
